@@ -533,7 +533,12 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
              *  @memberof highed.Editor
              *  @type {highed.DataImporter}
              */
-            importer: dataImp            
+            importer: dataImp,
+            /** The chart template selector instance attached to the editor
+             *  @memberof highed.Editor
+             *  @type {highed.ChartTemplateSelector}
+             */
+            templateSelector: chartTemplateSelector
         };
     };
 })();

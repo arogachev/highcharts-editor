@@ -103,6 +103,8 @@ highed.ChartTemplateSelector = function (parent) {
                 node.className = 'highed-chart-template-preview highed-chart-template-preview-selected';
 
                 selected = {
+                    group: masterID,
+                    name: key,
                     id: masterID + key + t.title,
                     node: node
                 };
@@ -146,6 +148,10 @@ highed.ChartTemplateSelector = function (parent) {
         list.selectFirst();
     }
 
+    function getSelected() {
+        return selected;
+    }
+
     ///////////////////////////////////////////////////////////////////////////
 
     list.on('Select', function (id) {
@@ -161,6 +167,7 @@ highed.ChartTemplateSelector = function (parent) {
     return {
         on: events.on,
         resize: resize,
-        rebuild: build
+        rebuild: build,
+        getSelected: getSelected
     };
 };

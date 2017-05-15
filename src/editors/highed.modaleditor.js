@@ -104,10 +104,17 @@ highed.ModalEditor = function (summoner, attributes, fn) {
 
     ///////////////////////////////////////////////////////////////////////////
 
-    return {
+    var obj = {
         show: modal.show,
         hide: modal.hide,
         on: editor.on,
-        attachToSummoner: attachToSummoner       
+        attachToSummoner: attachToSummoner,
+        chart: editor.chart
     };
+
+    if (editor.templateSelector) {
+        obj.templateSelector = editor.templateSelector;
+    }
+
+    return obj;
 };
