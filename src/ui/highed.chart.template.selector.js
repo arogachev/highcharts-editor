@@ -152,6 +152,10 @@ highed.ChartTemplateSelector = function (parent) {
         return selected;
     }
 
+    function setSelected(obj) {
+        selected = obj;
+    }
+
     ///////////////////////////////////////////////////////////////////////////
 
     list.on('Select', function (id) {
@@ -168,6 +172,8 @@ highed.ChartTemplateSelector = function (parent) {
         on: events.on,
         resize: resize,
         rebuild: build,
-        getSelected: getSelected
+        getSelected: getSelected,
+        setSelected: setSelected,
+        list: list
     };
 };
