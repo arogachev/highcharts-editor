@@ -543,7 +543,12 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
              *  @memberof highed.Editor
              *  @type {highed.ChartTemplateSelector}
              */
-            templateSelector: chartTemplateSelector
+            templateSelector: chartTemplateSelector,
+            /** The chart customizer instance attached to the editor
+             *  @memberof highed.Editor
+             *  @type {highed.ChartCustomizer}
+             */
+            customizer: chartCustomizer
         };
     };
 })();

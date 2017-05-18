@@ -459,6 +459,7 @@ highed.ChartCustomizer = function (parent, attributes) {
         init: init,
         focus: focus,
         reselect: list.reselect,
-        highlightField: highlightField
+        highlightField: highlightField,
+        list: list
     };
 };

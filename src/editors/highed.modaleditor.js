@@ -116,6 +116,7 @@ highed.ModalEditor = function (summoner, attributes, fn) {
     if (properties.type === 'full') {
         obj.wizardBar = editor.wizardBar;
         obj.templateSelector = editor.templateSelector;
+        obj.customizer = editor.customizer;
     }
 
     return obj;
