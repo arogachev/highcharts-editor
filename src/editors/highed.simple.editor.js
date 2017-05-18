@@ -201,6 +201,11 @@ highed.SimpleEditor = function (parent, attributes) {
          *  @type {highed.ChartPreview}
          *  @memberof highed.SimpleEditor
          */
-        chart: preview
+        chart: preview,
+        /** The data importer
+         *  @memberof highed.Editor
+         *  @type {highed.DataImporter}
+         */
+        importer: importer
     };
 };

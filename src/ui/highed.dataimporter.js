@@ -431,7 +431,9 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             loadCSV: loadCSVExternal,
             resize: resize,
             show: show,
-            hide: hide
+            hide: hide,
+            tabs: tabs,
+            csvPasteArea: csvPasteArea
         };
     };
 })();

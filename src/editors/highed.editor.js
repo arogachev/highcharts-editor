@@ -534,6 +534,11 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
              *  @type {highed.DataImporter}
              */
             importer: dataImp,
+            /** The wizard bar instance attached to the editor
+             *  @memberof highed.Editor
+             *  @type {highed.WizardBar}
+             */
+            wizardBar: wizbar,
             /** The chart template selector instance attached to the editor
              *  @memberof highed.Editor
              *  @type {highed.ChartTemplateSelector}

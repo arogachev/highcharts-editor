@@ -109,10 +109,12 @@ highed.ModalEditor = function (summoner, attributes, fn) {
         hide: modal.hide,
         on: editor.on,
         attachToSummoner: attachToSummoner,
-        chart: editor.chart
+        chart: editor.chart,
+        importer: editor.importer
     };
 
-    if (editor.templateSelector) {
+    if (properties.type === 'full') {
+        obj.wizardBar = editor.wizardBar;
         obj.templateSelector = editor.templateSelector;
     }
 
