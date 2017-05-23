@@ -322,9 +322,10 @@ highed.dom = {
      * @namespace highed.dom
      * @param node {object} - the node to get the position of
      * @param abs {boolean} - absolute calculation rather than parent relative
+     * @param withWindow {boolean} - additionally count window scroll. Used only with `abs`.
      * @return {object} - the position as an object `{x, y}`
      */
-    pos: function (node, abs) {
+    pos: function (node, abs, withWindow) {
       var x = 0, 
           y = 0
       ;
@@ -334,8 +335,8 @@ highed.dom = {
         var b = node.getBoundingClientRect();
         
         return {
-          x: b.left + window.scrollX,
-          y: b.top + window.scrollY
+          x: b.left + (withWindow ? window.scrollX : 0),
+          y: b.top + (withWindow ? window.scrollY : 0)
         };
       }
       
